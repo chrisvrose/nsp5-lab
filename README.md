@@ -6,7 +6,7 @@ Lab for 5th Semester Network Programming and Security Lab
 
 - [X] Program 1 - TCP file server and client
   - [X] Server - Read file according to recieved filename and send it
-  - [X] Client - Send filename, and recieve file and output to `resp.out`
+  - [X] Client - Send filename, and recieve file and output to `stdout`
 
 
 ## Building the resources

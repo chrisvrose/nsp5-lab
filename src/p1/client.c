@@ -51,25 +51,24 @@ int main(int argc, char** argv){
     printf("I> Read filesize %d\n",fSize);
     i=0,j=0,k=0;
 
-    int fd = open(FILE_OP,O_CREAT|O_WRONLY,777);
-    if(fd==-1||fSize==0){
-        fprintf(stderr,"E> Could not open file\n");
+    // int fd = open(FILE_OP,O_CREAT|O_WRONLY,777);
+    if(fSize==0){
+        fprintf(stderr,"E> ServerError\n");
         return 0;
     }
+    printf("I>File contents:\n");
     while(j<fSize){
         i= recv(sockfd,resp,sizeof(resp),0);
         j+=i;
-        printf("I>READ up %d\n",i);
-        while(k<i){
-            k+= write(fd,resp-k,i-k);
-            // printf("I>Wrote in %d\n",k);
+        // printf("I>READ up %d\n",i);
+        for(k=0;k<i;k++){
+            printf("%c",resp[k]);
         }
-        k=0;
     }
 
-    printf("I>Wrote output to \"%s\"\n",FILE_OP);
+    printf("\nI>File contents over\n");
 
-    close(fd);
+    // close(fd);
     close(sockfd);
 
 
