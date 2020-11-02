@@ -21,6 +21,32 @@ add_executable(p1S ${SRC_1S})
 
 
 
+# Program 6 - echo client
+set(SRC_6C
+    src/p6/client.c
+)
+add_executable(p6C ${SRC_6C})
+
+
+# Program 6 - echo server concurrent 
+set(SRC_6IS
+    src/p6/iterserver.c
+)
+add_executable(p6IS ${SRC_6IS})
+
+set(SRC_6CS
+    src/p6/concserver.c
+)
+add_executable(p6CS ${SRC_6CS})
+
+# set(SRC_1S
+#     src/p1/server.c
+# )
+# add_executable(p1S ${SRC_1S})
+
+
+
+
 # set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 # set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 # include(CPack)
