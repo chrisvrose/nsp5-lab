@@ -1,13 +1,9 @@
 # nsp5-lab
 Lab for 5th Semester Network Programming and Security Lab
 
+## Screenshots and Program List
 
-## Programs 
-
-- [X] Program 1 - TCP file server and client
-  - [X] Server - Read file according to recieved filename and send it
-  - [X] Client - Send filename, and recieve file and output to `stdout`
-
+Please refer the [output folder](output/README.md).
 
 ## Building the resources
 
@@ -29,6 +25,3 @@ Refer to below example:
 cc -I ./include src/p1/client.c -o client.out
 ```
 
-## Screenshots and Output
-
-Please refer the [output folder](output/README.md).
