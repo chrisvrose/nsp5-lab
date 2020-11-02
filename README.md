@@ -1,5 +1,6 @@
 # nsp5-lab
-Lab for 5th Semester Network Programming and Security Lab
+
+Repository for 5th Semester Network Programming and Security Lab
 
 ## Screenshots and Program List
 
