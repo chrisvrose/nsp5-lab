@@ -31,4 +31,4 @@ cc -I ./include src/p1/client.c -o client.out
 
 ## Screenshots and Output
 
-Please refer `output` folder
+Please refer the [output folder](output/README.md).
