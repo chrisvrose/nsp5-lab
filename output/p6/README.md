@@ -12,6 +12,7 @@
     - [Output](#output-1)
       - [Client incorrect address](#client-incorrect-address-1)
       - [Successful communication](#successful-communication)
+      - [Multiple connections](#multiple-connections)
 
 ## Program Description
 
@@ -63,3 +64,9 @@ Two cases are shown here:
 The different pids depict that the process forks in order to respond. This allows multiple clients to connect to the server and communicate with it at the same time.
 
 ![Concurrent successful](Screenshot%20from%202020-11-02%2015-37-36.png)
+
+#### Multiple connections
+
+The order of pids show that two or more connections can stay alive and the program can communicate with more than one client at the same time.
+
+![Concurrent threads](Screenshot%20from%202020-11-09%2015-02-33.png)
