@@ -39,6 +39,15 @@ set(SRC_6CS
 )
 add_executable(p6CS ${SRC_6CS})
 
+set(SRC_6CU
+    src/p6/uclient.c
+)
+add_executable(p6CU ${SRC_6CU})
+
+set(SRC_6SU
+    src/p6/userver.c
+)
+add_executable(p6SU ${SRC_6SU})
 # set(SRC_1S
 #     src/p1/server.c
 # )
