@@ -48,6 +48,19 @@ set(SRC_6SU
     src/p6/userver.c
 )
 add_executable(p6SU ${SRC_6SU})
+
+
+set(SRC_5C
+    src/p5/client.c
+)
+add_executable(p5C ${SRC_5C})
+
+set(SRC_5S
+    src/p5/server.c
+)
+add_executable(p5S ${SRC_5S})
+
+
 # set(SRC_1S
 #     src/p1/server.c
 # )
