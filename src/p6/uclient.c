@@ -8,6 +8,10 @@ int main(int argc, char** argv) {
     int i = 0, j = 0, k = 0, n = 0;
 
 #pragma region Boilerplate
+    if (argc < 2) {
+        printf("E>No addr\n");
+        return E_F;
+    }
     int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
     if (sockfd < 0) {
         printf("E>Failed to allocate socket");
