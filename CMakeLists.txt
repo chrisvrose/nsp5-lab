@@ -60,6 +60,7 @@ set(SRC_5S
 )
 add_executable(p5S ${SRC_5S})
 
+add_executable(p7 src/p7/bford.c)
 
 # set(SRC_1S
 #     src/p1/server.c
