@@ -26,12 +26,12 @@ int main(){
     //sender msg
     printf("Sender:\n");
     result1=checksum(senderfields);
+    printf("Computed checksum @ sender: %x\n",result1);
+
+
     printf("Receiver:\n");
     result2=checksum(recvfields);
 
-    
-
-    printf("Computed checksum @ sender: %x\n",result1);
     printf("Computed checksum @ reciever: %x\n",result2);
 
     if(result1==result2){
