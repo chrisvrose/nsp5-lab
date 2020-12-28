@@ -62,7 +62,9 @@ add_executable(p5S ${SRC_5S})
 
 add_executable(p7 src/p7/bford.c)
 
-add_executable(p3 src/p3/checksum.c)
+add_executable(p3a src/p3/checksum.c)
+
+add_executable(p3b src/p3/hamming.c)
 # set(SRC_1S
 #     src/p1/server.c
 # )
