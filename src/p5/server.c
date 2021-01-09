@@ -92,7 +92,7 @@ int main() {
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) {
         fprintf(stderr, "E>Failed to allocate socket\n");
-        return E_F;
+        return 1;
     } else {
         printf("I>Allocated socket %d\n");
     }
@@ -104,12 +104,12 @@ int main() {
 
     if (bind(sockfd, (struct sockaddr*)&address, sizeof(address)) < 0) {
         fprintf(stderr, "E>failed to bind");
-        return E_F;
+        return 1;
     }
 
     if (listen(sockfd, 2) < 0) {
         fprintf(stderr, "E>Failed to set to listen mode");
-        return E_F;
+        return 1;
     }
 
     int newSock, pid;

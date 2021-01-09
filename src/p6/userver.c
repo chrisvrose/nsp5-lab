@@ -42,7 +42,7 @@ int main() {
     int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
     if (sockfd < 0) {
         printf("E>Failed to allocate socket\n");
-        return E_F;
+        return 1;
     } else {
         printf("I>Allocated socket %d\n");
     }
@@ -54,7 +54,7 @@ int main() {
 
     if (bind(sockfd, (struct sockaddr*)&address, sizeof(address)) < 0) {
         printf("E>failed to bind\n");
-        return E_F;
+        return 1;
     }
 
 #pragma endregion

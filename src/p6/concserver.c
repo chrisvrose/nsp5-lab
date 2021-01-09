@@ -65,7 +65,7 @@ int main()
     if (sockfd < 0)
     {
         printf("E>Failed to allocate socket\n");
-        return E_F;
+        return 1;
     }
     else
     {
@@ -81,13 +81,13 @@ int main()
     if (bind(sockfd, (struct sockaddr *)&address, sizeof(address)) < 0)
     {
         printf("E>failed to bind\n");
-        return E_F;
+        return 1;
     }
 
     if (listen(sockfd, 2) < 0)
     {
         printf("E>Failed to set to listen mode\n");
-        return E_F;
+        return 1;
     }
 
     int newSock, pid;

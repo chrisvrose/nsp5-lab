@@ -4,25 +4,27 @@
 #include<stdio.h>
 #include<stdlib.h> 
 #include<string.h> 
+// all system type aliases
 #include<sys/types.h>
+
+// fstat
 #include<sys/stat.h>
 #include<fcntl.h>
+
+//all the nps headers
 #include<sys/socket.h>
 #include<netinet/in.h>
 #include<arpa/inet.h>
 #include<signal.h>
-#include<sys/resource.h>
 
+// wait
 #include<sys/wait.h>
+// select call 
 #include<sys/select.h>
 #include<unistd.h>
-#define E_S EXIT_SUCCESS
-#define E_F EXIT_FAILURE
 
 #define PORT 3000
 //time buffer size
 #define FILELEN 100
-
-#define FILE_OP "resp.out"
 
 #endif

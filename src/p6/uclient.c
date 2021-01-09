@@ -10,12 +10,12 @@ int main(int argc, char** argv) {
 #pragma region Boilerplate
     if (argc < 2) {
         printf("E>No addr\n");
-        return E_F;
+        return 1;
     }
     int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
     if (sockfd < 0) {
         printf("E>Failed to allocate socket");
-        return E_F;
+        return 1;
     } else {
         printf("I>Allocated socket %d\n");
     }
@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
     };
     if (inet_pton(AF_INET, argv[1], &(address.sin_addr)) < 0) {
         printf("E>Could not get convert addr\n");
-        return E_F;
+        return 1;
     }
 
     // check
