@@ -1,7 +1,7 @@
-# Program 7 - Dist vector routing (Bellman Ford Algorithm)
+# Program 2 - Dist vector routing (Bellman Ford Algorithm)
 
 ## TOC
-- [Program 7 - Dist vector routing (Bellman Ford Algorithm)](#program-7---dist-vector-routing-bellman-ford-algorithm)
+- [Program 2 - Dist vector routing (Bellman Ford Algorithm)](#program-2---dist-vector-routing-bellman-ford-algorithm)
   - [TOC](#toc)
   - [Program Description](#program-description)
   - [Output](#output)
