@@ -8,60 +8,33 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/include
 )
 
-set(SRC_1C
-    src/p1/client.c
-)
-add_executable(p1C ${SRC_1C})
-
-
-set(SRC_1S
-    src/p1/server.c
-)
-add_executable(p1S ${SRC_1S})
-
-
+# client server
+add_executable(p1C src/p1/client.c)
+add_executable(p1S src/p1/server.c)
 
 # Program 6 - echo client
-set(SRC_6C
-    src/p6/client.c
-)
-add_executable(p6C ${SRC_6C})
+add_executable(p6C src/p6/client.c)
 
 
 # Program 6 - echo server concurrent 
-set(SRC_6IS
-    src/p6/iterserver.c
-)
-add_executable(p6IS ${SRC_6IS})
+add_executable(p6IS src/p6/iterserver.c)
 
-set(SRC_6CS
-    src/p6/concserver.c
-)
-add_executable(p6CS ${SRC_6CS})
+add_executable(p6CS src/p6/concserver.c)
 
-set(SRC_6CU
-    src/p6/uclient.c
-)
-add_executable(p6CU ${SRC_6CU})
+add_executable(p6CU src/p6/uclient.c)
 
-set(SRC_6SU
-    src/p6/userver.c
-)
-add_executable(p6SU ${SRC_6SU})
+add_executable(p6SU src/p6/userver.c)
 
 
-set(SRC_5C
-    src/p5/client.c
-)
-add_executable(p5C ${SRC_5C})
+add_executable(p5C src/p5/client.c)
 
-set(SRC_5S
-    src/p5/server.c
-)
-add_executable(p5S ${SRC_5S})
+add_executable(p5S src/p5/server.c)
 
-add_executable(p7 src/p7/bford.c)
+# bford
+add_executable(p2 src/p2/bford.c)
+add_executable(p2b src/p2/bellmanford.c)
 
+# checksum
 add_executable(p3a src/p3/checksum.c)
 
 add_executable(p3b src/p3/hamming.c)
