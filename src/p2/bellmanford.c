@@ -1,5 +1,8 @@
 #include <stdio.h>
-int A[10][10], n, d[10], p[10];
+#include<limits.h>
+#define GMAX 10
+
+int A[GMAX][GMAX], n, d[GMAX], p[GMAX];
 int BellmanFord(int s) {
     int i, u, v;
     for (i = 1; i < n; i++) {
@@ -15,7 +18,7 @@ int BellmanFord(int s) {
     for (u = 0; u < n; u++) {
         for (v = 0; v < n; v++) {
             if (d[v] > d[u] + A[u][v]) {
-                printf("Negative Edge");
+                printf("Negative Edge\n");
                 return 0 ;
             }
         }
@@ -24,7 +27,7 @@ int BellmanFord(int s) {
 }
 
 int main() {
-    printf("Enter the no. of vertices : ");
+    printf("Enter the no. of vertices\n:");
     scanf("%d", &n);
     printf("Enter the adjacency matrix\n");
     int i, j;
@@ -35,13 +38,13 @@ int main() {
     int source;
     for (source = 0; source < n; source++) {
         for (i = 0; i < n; i++) {
-            d[i] = 999;
+            d[i] = INT_MAX>>1;//INT_MAX;//INT_MAX;
             p[i] = -1;
         }
         d[source] = 0;
 
         if(!BellmanFord(source)){
-            break;
+            return 1;
         };
 
         printf("Router %d\n", source);
