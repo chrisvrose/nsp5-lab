@@ -38,14 +38,9 @@ add_executable(p2b src/p2/bellmanford.c)
 add_executable(p3a src/p3/checksum.c)
 
 add_executable(p3b src/p3/hamming.c)
-# set(SRC_1S
-#     src/p1/server.c
-# )
-# add_executable(p1S ${SRC_1S})
 
 
+add_executable(p4l src/p4/listener.c)
+add_executable(p4s src/p4/sender.c)
 
 
-# set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-# set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-# include(CPack)
