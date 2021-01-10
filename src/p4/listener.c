@@ -7,8 +7,21 @@
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <time.h>
-#include<linux/in.h>
+#include<unistd.h>
+
+// #include<linux/in.h>
 // #include<comsoc.h>
+
+#ifndef __USE_MISC
+struct ip_mreq
+  {
+    /* IP multicast address of group.  */
+    struct in_addr imr_multiaddr;
+
+    /* Local IP address of interface.  */
+    struct in_addr imr_interface;
+  };
+#endif
 
 #define HELLO_PORT 12345
 #define HELLO_GROUP "224.0.0.1"

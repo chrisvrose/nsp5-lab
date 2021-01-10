@@ -12,6 +12,17 @@
 //"225.0.0.37"
 //"127.10.10.8"
 
+#ifndef __USE_MISC
+struct ip_mreq
+  {
+    /* IP multicast address of group.  */
+    struct in_addr imr_multiaddr;
+
+    /* Local IP address of interface.  */
+    struct in_addr imr_interface;
+  };
+#endif
+
 int main(int argc, char* argv[]) {
     struct sockaddr_in addr;
     int fd, cnt;
