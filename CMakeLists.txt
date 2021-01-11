@@ -44,3 +44,7 @@ add_executable(p4l src/p4/listener.c)
 add_executable(p4s src/p4/sender.c)
 
 
+add_executable(p8dh src/p8/dh.c)
+# add_executable(p4s src/p4/sender.c)
+
+
