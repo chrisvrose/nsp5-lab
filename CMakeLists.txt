@@ -45,6 +45,11 @@ add_executable(p4s src/p4/sender.c)
 
 
 add_executable(p8dh src/p8/dh.c)
+add_executable(p8rsa src/p8/rsa.c)
+
+add_executable(p7c src/p7/rmtc.c)
+add_executable(p7s src/p7/rmts.c)
+
 # add_executable(p4s src/p4/sender.c)
 
 
