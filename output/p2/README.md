@@ -18,11 +18,11 @@ This algorithm can be used to find the shortest path between two nodes in a weig
 
 It can be seen that it does not use edge 1->3 as it yields a longer path
 
-![Simple](Screenshot%20from%202020-12-07%2015-22-59.png)
+![Simple](Screenshot%20from%202021-01-13%2016-24-59.png)
 
 ### Graph 2 (5 vertices)
 
 Infinity is denoted in this program as any number greater than the sum of the absolute values of weights of all the edges in the program. Here, it is denoted as 999. This also implies that the two nodes are unconnected.
 As the program here generated the distances for all possible starting nodes, there is a lot of output. 
 
-![Complex](Screenshot%20from%202020-12-07%2015-22-17.png)
+![Complex](Screenshot%20from%202021-01-13%2016-25-46.png)
